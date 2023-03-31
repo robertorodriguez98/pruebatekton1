@@ -1,6 +1,7 @@
 apiVersion: tekton.dev/v1beta1
 kind: PipelineRun
 metadata:
+  name: pruebapipe
   generateName: clone-build-push-run-
   annotations:
     argocd.argoproj.io/sync-options: Replace=true
