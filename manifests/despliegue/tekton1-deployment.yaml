@@ -2,21 +2,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: bgd
-  name: bgd
-  namespace: bgd
+    app: tekton1
+  name: tekton1
+  namespace: argocd
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bgd
+      app: tekton1
   strategy: {}
   template:
     metadata:
       labels:
-        app: bgd
+        app: tekton1
     spec:
       containers:
       - image: robertorm/pruebatekton:v1
-        name: bgd
+        name: tekton1
         resources: {}

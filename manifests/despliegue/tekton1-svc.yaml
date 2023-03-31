@@ -2,14 +2,14 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: bgd
-  name: bgd
-  namespace: bgd
+    app: tekton1
+  name: tekton1
+  namespace: tekton1
 spec:
   type: NodePort
   ports:
-  - port: 8080
+  - port: 80
     protocol: TCP
-    targetPort: 8080
+    targetPort: 80
   selector:
-    app: bgd
+    app: tekton1
