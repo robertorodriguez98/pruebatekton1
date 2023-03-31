@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argo-tekton-despliegue
+  name: argo-tekton-app
   namespace: argocd
 spec:
   destination:
@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: https://github.com/robertorodriguez98/pruebatekton1.git
     targetRevision: main
-    path: manifests/despliegue
+    path: manifests
   syncPolicy:
     automated:
       prune: true
