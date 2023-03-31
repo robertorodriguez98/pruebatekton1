@@ -2,7 +2,8 @@ apiVersion: tekton.dev/v1beta1
 kind: PipelineRun
 metadata:
   generateName: clone-build-push-run-
-  argocd.argoproj.io/sync-options: Replace=true
+  annotations:
+    argocd.argoproj.io/sync-options: Replace=true
 spec:
   pipelineRef:
     name: clone-build-push
