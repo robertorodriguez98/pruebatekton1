@@ -3,4 +3,4 @@ kind: Job
 metadata:
   generateName: despliegue-argotekton-
   annotations:
-    argocd.argoproj.io/hook: PreSync
+    argocd.argoproj.io/hook: PostSync
