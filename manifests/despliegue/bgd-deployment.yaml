@@ -17,6 +17,6 @@ spec:
         app: bgd
     spec:
       containers:
-      - image: robertorm/robertorm/pruebatekton:v1
+      - image: robertorm/pruebatekton:v1
         name: bgd
         resources: {}
