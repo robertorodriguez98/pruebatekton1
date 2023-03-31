@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: default
+  name: tekton1
 spec:
   rules:
   - host: www.argocd-tekton.org
