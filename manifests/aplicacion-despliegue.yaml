@@ -1,8 +1,10 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argo-tekton-despliegue
+  name: argo-tekton-despliegue1
   namespace: argocd
+  annotations:
+    argocd.argoproj.io/hook: PostSync
 spec:
   destination:
     namespace: default
