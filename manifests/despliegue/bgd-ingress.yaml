@@ -4,8 +4,8 @@ metadata:
   name: bgd
 spec:
   rules:
-    - host: bgd.devnation
-      http: www.tekton-argocd.org
+    - host: www.tekton-argocd.org
+      http: 
         paths:
           - path: /
             pathType: Prefix
